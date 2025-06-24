@@ -36,3 +36,14 @@ Database operations are handled using **SQLAlchemy ORM**.
 ```bash
 git clone https://github.com/your-username/custom_api_server.git
 cd custom_api_server
+
+## Testing & Coverage
+
+This project uses `pytest` for unit, integration, and API testing. Coverage is measured using `pytest-cov`.
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+pytest --cov=crud --cov=main --cov-report=term --cov-report=html
+
